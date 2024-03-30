@@ -1,0 +1,46 @@
+body {
+
+}
+
+#room {
+    border: 2px dashed gainsboro;
+    width: 75vw;
+    max-height: 90vh;
+    aspect-ratio: 3 / 2;
+    margin: auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+#breakfast {
+    position: absolute;
+    width: 100%;
+    top: -40%;
+    text-align: center;
+    display: none;
+}
+
+#table {
+    border-radius: 50%;
+    border: 2px solid rgb(152, 104, 65);
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    cursor: pointer;
+}
+
+.plate {
+    display: none;
+    border-radius: 50%;
+    border: 2px solid rgb(34, 33, 33);
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    background-color: whitesmoke;
+}
+
+#table:hover .plate,
+#table:hover #breakfast {
+    display: block;
+}
